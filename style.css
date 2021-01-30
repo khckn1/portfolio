@@ -76,7 +76,7 @@ ul {
 }
 
 /* Phone */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1284px) {
 .data {
 	flex-wrap: wrap;	
 }
@@ -86,7 +86,7 @@ ul {
 }
 
 /* Desktop */
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 1285px) {
 .experience, .projects, .contact {
         width: 30%;
 	align-self: stretch;
