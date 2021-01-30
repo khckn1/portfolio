@@ -66,11 +66,29 @@ ul {
 .data {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .experience, .projects, .contact {
 	border: 2px solid #EEEEEE;
 	background-color: #DDE0E3;
-	flex: initial;
-	width: 30%;
+	padding: 5px;
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+.data {
+	flex-wrap: wrap;	
+}
+.experience, .projects, .contact {
+	width: 90%;
+}
+}
+
+/* Desktop */
+@media only screen and (min-width: 501px) {
+.experience, .projects, .contact {
+        width: 30%;
+	align-self: stretch;
+}
 }
