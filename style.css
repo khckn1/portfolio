@@ -43,28 +43,34 @@ ul {
 	list-style-type: square;
 }
 
+.menu-bar-container {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #000080;
+}
+
 .menu-bar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: #000080;
-	overflow: hidden;
+	
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-.menu-bar li {
-	display: inline;
-	float: left;
-}
-
-.menu-bar li a{
-	display: block;
-	padding: 8px;
-	background-color: #000080;
-	color: #DDE0E3;
-	text-align: center;
+.menu-bar-container .menu-bar a {
+	padding: 5px;
+	margin-bottom: 5px;
+	color: #ffffff;
 	text-decoration: none;
 }
 
-.menu-bar li a:hover{
-	background-color: #4444AD;
+.data {
+	display: flex;
+	justify-content: space-around;
+}
+
+.experience, .projects, .contact {
+	border: 2px solid #EEEEEE;
+	background-color: #DDE0E3;
+	flex: initial;
+	width: 30%;
 }
